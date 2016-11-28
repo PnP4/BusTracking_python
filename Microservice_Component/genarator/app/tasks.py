@@ -5,7 +5,7 @@ import requests
 import json
 
 from app import app
-from app import filter_bus_data
+from app import alert_gen
 
 
 @app.route('/', methods=['POST'])
