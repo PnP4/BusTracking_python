@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cc1cc9a-ab14-4ddd-bda5-92a8c1c536fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/overspeed/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/overspeed/run.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/overwaiting/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/overwaiting/run.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FilterBusData.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/overspeed.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/overwaiting.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BusTracking.iml" afterPath="$PROJECT_DIR$/.idea/BusTracking.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3cc1cc9a-ab14-4ddd-bda5-92a8c1c536fb" name="Default" comment="" />
     <ignored path="BusTracking.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
