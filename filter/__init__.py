@@ -1,8 +1,8 @@
 import json
+from nanomsg import Socket, BUS
 
-data=json.loads('{"id":1001,"regno":"300-2050","datamov":[{"speed":50,"lat":83.045,"lon":79.589},{"speed":50,"lat":83.045,"lon":79.589},'
-                '{"speed":50,"lat":83.045,"lon":79.589},{"speed":50,"lat":83.045,"lon":79.589},{"speed":50,"lat":83.045,"lon":79.589},'
-                '{"speed":50,"lat":83.045,"lon":79.589},{"speed":50,"lat":83.045,"lon":79.589},{"speed":50,"lat":83.045,"lon":79.589}],"time":125885555,"nooftickets":150,"fuel":15000}')
+socket = Socket(BUS)
+socket.connect('tcp://192.168.1.7:5551')
 
 def getspeeddata(data):
     id=data["id"]
@@ -13,7 +13,7 @@ def getspeeddata(data):
         speeds.append(i["speed"])
     time = data["time"]
     extracteddata={"id":id,"regno":regno,"speed":speeds,"time":time}
-    return json.dumps(extracteddata)
+    return extracteddata
 
 def getlocationdata(data):
     id=data["id"]
@@ -27,7 +27,4 @@ def getlocationdata(data):
         locations.append(temp)
     time = data["time"]
     extracteddata={"id":id,"regno":regno,"movedata":locations,"time":time}
-    return json.dumps(extracteddata)
-
-print getspeeddata(data)
-print getlocationdata(data)
+    return extracteddata
